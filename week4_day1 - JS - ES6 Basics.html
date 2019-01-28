@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>JS</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+
+		<h1>JS | ES6 Basics</h1>
+
+		<script>
+
+/*
+
+			// let, const
+
+			// classic var scope
+			for (var i = 0; i < 3; i++){
+				// whatever
+			}
+
+			alert(i)
+
+
+
+
+
+			// let block scope
+			for (let i = 0; i < 3; i++){
+				// whatever
+			}
+
+			alert(i)
+
+
+
+
+			// let block scope
+			if (true){
+				let miValor = 'dummy text';
+			}
+
+			alert(miValor)
+
+*/
+
+
+
+
+
+/*
+
+			// truthy - falsy conditionals
+			function esPar(val) {
+				if (val % 2 === 0) {
+					return true
+				}
+			}
+
+			if (esPar(4)) {		// rejects falsy values (null, false, undefined, 0 , ""...)
+				alert('es par!');
+			}
+
+
+*/
+
+
+
+
+
+/*
+			// ES6 string methods
+			const str = "To be, or not to be, that is the question.";
+
+			str.startsWith("To be");	// true
+			str.startsWith("to be");	// false
+			str.endsWith("question");	// true
+			str.endsWith("that");			// false
+			str.includes("To be");		// true
+			str.includes("To be", 1);	// false
+
+*/
+
+
+
+/*
+			// Object deconstruction - also nested!
+			const bill = {
+			  date: "02/05/2018",
+			  id: 29835,
+			  customer: "Accor Hoteles",
+			  totals: {
+			    subtotal: 1000,
+			    tax: 210
+			  }
+			}
+
+			const {
+			  date,
+			  id,
+			  customer,
+			  totals: { subtotal: invoiceSubtotal }
+			} = bill;
+
+			console.log(customer);
+			console.log(invoiceSubtotal);
+
+
+
+
+
+
+
+			// array deconstruction - with default values also!
+			let drinks = ['Coca-cola', 'Sprite', 'Cacaolat', 'Rebull']
+
+			const [one = 'Pepsi', two = 'Seven Up',,,,,, last = 'Monster'] = drinks
+			alert(one)
+			alert(two)
+			alert(last)
+*/
+
+
+
+
+/*
+		// Array merging without spread operator
+		let drinksHQ = ['Coca-cola', 'Sprite', 'Cacaolat', 'Rebull']
+		let drinksLQ = ['Pepsi Max', 'Seven Up', 'Okey', 'Monster']
+
+		let allDrinks = []
+
+		drinksHQ.forEach(function(drink){
+			allDrinks.push(drink)
+		})
+
+		drinksLQ.forEach(function(drink){
+			allDrinks.push(drink)
+		})
+
+		console.log(allDrinks);
+
+
+
+
+		// array merging with spread operator
+		const drinksHQ = ['Coca-cola', 'Sprite', 'Cacaolat', 'Rebull']
+		const drinksLQ = ['Pepsi Max', 'Seven Up', 'Okey', 'Monster']
+
+		const allDrinks = [...drinksLQ, ...drinksHQ]
+
+		console.log(allDrinks)
+*/
+
+
+
+
+
+
+/*
+
+		// object arguments
+		function showNames() {
+			for (let i = 0; i < arguments.length; i++){
+				console.log(arguments[i])
+			}
+		}
+
+		showNames('Germán', 'Isabel', 'Gonzalo')
+
+*/
+
+
+
+
+
+
+/*
+		// rest arguments
+		function showNames(firstName, ...others) {
+
+			alert(firstName)
+
+			for (let i = 0; i < others.length; i++){
+				console.log(rest[i])
+			}
+		}
+
+		showNames('Germán', 'Isabel', 'Gonzalo')
+*/
+
+
+
+
+		</script>
+
+	</body>
+</html>

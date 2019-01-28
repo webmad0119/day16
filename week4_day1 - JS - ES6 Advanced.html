@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>JS</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+
+		<h1>JS | ES6 Advanced</h1>
+
+		<script>
+
+
+		/*
+				// Classes and inheritance
+
+				class Person {
+
+					constructor(val1, val2, val3){
+						this.firstName 	= val1;
+						this.surname   	= val2;
+						this.age				= val3;
+					}
+				}
+
+
+				class Player extends Person {
+
+					constructor(val1, val2, val3, val4){
+						super(val1, val2, val3)
+						this.points = val4
+					}
+				}
+
+
+				class Witch extends Player {
+
+					constructor(val1, val2, val3, val4){
+						super(val1, val2, val3, val4)
+						this.role			= 'bruja'
+					}
+
+					lanzarHechizo(){
+						console.log("La bruja " + this.firstName + " te lanzó un hechizo!")
+					}
+				}
+
+
+				class Elf extends Player {
+
+					constructor(val1, val2, val3, val4){
+						super(val1, val2, val3, val4)
+						this.role			= 'elfo'
+					}
+
+					escupir(){
+						console.log("El elfo " + this.firstName + " te escupió! Menudo guarro...")
+					}
+				}
+
+
+
+				var onlyPerson = new Person('Germán', 'Álvarez', 32)
+				console.log(onlyPerson.firstName + ' tiene ' + onlyPerson.age + ' años ')
+
+				var onlyPlayer = new Player('Sara', 'Díaz', 16, 2000)
+				console.log(onlyPlayer.firstName + ' tiene ' + onlyPlayer.points + ' puntos ')
+
+				var bruja = new Witch('Piruja', 'Ruiz', 97, 2000)
+				bruja.lanzarHechizo()
+
+				var elfo = new Elf('John', 'Doe', 30, 2000)
+				elfo.escupir()
+		*/
+
+
+
+
+
+		/*
+		// Arrow functions (example 0)
+
+		class Counter {
+		  constructor() {
+		    this.count = 1;
+		  }
+
+		  countUp() {
+		    setInterval(() => {
+		      console.log(this.count++); // <-- Great!
+		    }, 1000);
+		  }
+		}
+
+		let myCounter = new Counter();
+		myCounter.countUp();
+
+
+
+
+		// Arrow function (example 2)
+		const esPar = val => if (val % 2 === 0) return true
+		console.log(esPar(2))
+
+
+
+
+
+
+		// Arrow function (example 3)
+		const drinksHQ = ['Coca-cola', 'Sprite', 'Cacaolat', 'Rebull']
+		drinksHQ.forEach( drink => alert(drink) )
+
+
+
+
+
+
+		// Arrow function (example 3)
+		const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+		const evens = numbers.filter(singleNumber => singleNumber % 2 === 0);
+		console.log(evens);
+
+
+
+
+
+
+
+		// Arrow function (example 4)
+		window.onmousemove = e => console.log(e.x)
+
+		*/
+		</script>
+
+	</body>
+</html>
